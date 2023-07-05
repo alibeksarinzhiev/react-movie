@@ -1,0 +1,40 @@
+.persons{
+    &__container{
+        width: 1200px;   
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    &__title p{
+        color: #FFF;
+        font-size: 65px;
+        font-weight: 900;
+    }
+    &__ul{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: pointer;
+    }
+    &__ul li{
+        font-size: 18px;
+        color: #6D717D;
+    }
+    &__ul li:nth-child(3){
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-top: 63px;
+    }
+    &__cards img{
+        width: 400px;
+        height: 400px;
+    }
+}

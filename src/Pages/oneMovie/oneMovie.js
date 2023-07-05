@@ -16,7 +16,7 @@ const OneMovie = () => {
     return (
         <section className='oneMovie'>
             <div className="oneMove__container container">
-                <img src={`../${one.image === undefined ?'': one.image}`} alt=""/>
+                <img src={`../../${one.image === undefined ?'': one.image}`} alt=""/>
                 <h2>{one.title}</h2>
                 <p>{one.desc}</p>
                 <h2>{one.id}</h2>
