@@ -9,7 +9,7 @@ const Trailer = () => {
                 <h2>Новые трейлеры</h2>
                 <div className="trailer__box">
                     {movies.map((el)=>(
-                        <div className='trailer__card'>
+                        <div key={el.id} className='trailer__card'>
                             <img src={el.image} alt=""/>
                             <h3>{el.title}</h3>
                         </div>

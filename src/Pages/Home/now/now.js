@@ -25,7 +25,7 @@ const {movies} = useContext(CustomContext)
                 <div className="now__movies">
                     {
                         movies.map((el)=>(
-                            <div className='movies__card'>
+                            <div key={el.id} className='now__card'>
                                 <Link to={`onemovie/${el.id}`}>
                                     <img src={el.image} alt=""/>
                                 </Link>
@@ -33,8 +33,12 @@ const {movies} = useContext(CustomContext)
                                 <h4>{el.title}</h4>
                                 <h5>{el.genre}</h5>
                                 <h2>{el.year}</h2>
-                                <h3 className={el.rate >= 7 ?"rategren":'ratebrown'}>{el.rate}</h3>
-                                <h3 className={el.rateWait >=70?"ratewaitgreen":"ratewaitbrown"}>{el.rateWait}</h3>
+                                <span className='btn1'>
+                                    <button className={el.rate >= 7 ?"rategren":'ratebrown'}>{el.rate}</button>
+                                </span>
+                                <span className='btn2'>
+                                    <button className={el.rateWait >=70?"ratewaitgreen":"ratewaitbrown"}>{el.rateWait}%</button>
+                                </span>
                             </div>
                         ))
                     }
