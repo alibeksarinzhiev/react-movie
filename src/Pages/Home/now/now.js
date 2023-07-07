@@ -2,9 +2,26 @@ import React, {useContext, useEffect, useState} from 'react';
 import './now.scss'
 import {CustomContext} from "../../../Context";
 import {Link} from "react-router-dom";
+import top from './Наверх.png'
+import {animateScroll} from "react-scroll";
+import {motion} from "framer-motion";
 
 
 const Now = () => {
+    const shakeVariants = {
+        hover: {
+            rotate:[0,8,-6,6,0],
+            transition: {
+                duration: 0.5,
+            },
+        },
+    };
+    const toTop = () => {
+        animateScroll.scrollToTop({
+            delay: 0,
+            duration: 0
+        })
+    };
 const {movies} = useContext(CustomContext)
 
     return (
@@ -27,7 +44,10 @@ const {movies} = useContext(CustomContext)
                         movies.map((el)=>(
                             <div key={el.id} className='now__card'>
                                 <Link to={`onemovie/${el.id}`}>
-                                    <img src={el.image} alt=""/>
+                                    <motion.div whileHover='hover' variants={shakeVariants}>
+                                        <img src={el.image} alt=""/>
+                                    </motion.div>
+
                                 </Link>
 
                                 <h4>{el.title}</h4>
@@ -44,6 +64,7 @@ const {movies} = useContext(CustomContext)
                     }
                 </div>
             </div>
+            <img className='totop' onClick={()=>toTop()} src={top} alt=""/>
         </section>
     );
 };
