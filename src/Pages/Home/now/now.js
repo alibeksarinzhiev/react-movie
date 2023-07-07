@@ -41,7 +41,7 @@ const {movies} = useContext(CustomContext)
                 </div>
                 <div className="now__movies">
                     {
-                        movies.map((el)=>(
+                        movies.slice(0,8).map((el)=>(
                             <div key={el.id} className='now__card'>
                                 <Link to={`onemovie/${el.id}`}>
                                     <motion.div whileHover='hover' variants={shakeVariants}>

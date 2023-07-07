@@ -11,9 +11,12 @@ const Expected = () => {
                 <p className='title__p'>Ожидаемые новинки</p>
             </div>
             <div className='expecred__cards'>
-                {movies.reverse().slice(0,2).map((el)=>
-                <div className='card'>
+                {movies.slice(3,7).reverse().map((el)=>
+                <div className='expecred__card'>
                     <img src={el.image} />
+                    <h4>{el.title}</h4>
+                    <p>{el.country}</p>
+                    <p>{el.year}</p>
                 </div>
                 
                 )}

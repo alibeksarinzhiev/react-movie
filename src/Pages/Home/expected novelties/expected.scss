@@ -1,6 +1,4 @@
 .expecred{
-    // background: #151A26;
-    // z-index: 3;
     &__container{
         width: 1200px;
     }
@@ -12,4 +10,10 @@
         font-size: 65px;
         font-weight: 900;
     }
+    &__cards{
+        display: flex;
+        align-items: center;
+        gap:28px;
+    }
+    &
 }
