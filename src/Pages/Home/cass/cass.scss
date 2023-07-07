@@ -1,0 +1,69 @@
+.cassa{
+    &__container{
+        width: 1200px;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+    &__title .title__text{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+    &__title h2{
+        color: #FFF;
+        font-size: 65px;
+        font-weight: 900;
+    }
+    &__title p{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+    &__title .title__ul{
+        display:flex;
+        gap: 15px;
+        color: #6D717D;
+    }
+    &__title .title__ul li{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__title .title__ul li:nth-child(2){
+        color: #FFF;
+    }
+    &__cards{
+        width: 1200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 62px;
+    }
+    &__card{
+        display: flex;
+        gap: 10px;
+        margin-left: 20px;
+    }
+    &__card .card__title{
+        margin-top: 40px;
+    }
+    &__card .card__title .p__one{
+        font-size: 18px;
+        font-weight: 700;
+        color: #FFF;
+    }
+    &__card .card__title .p__two{
+        font-size: 15px;
+        font-weight: 500;
+        color: #F2F60F;;
+    }
+    &__card .card__title .p__thre{
+        font-size: 14px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.41);
+    }
+}

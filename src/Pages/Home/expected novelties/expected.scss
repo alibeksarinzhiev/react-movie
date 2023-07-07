@@ -1,0 +1,15 @@
+.expecred{
+    // background: #151A26;
+    // z-index: 3;
+    &__container{
+        width: 1200px;
+    }
+    &__title{
+       margin-top: 45px;
+    }
+    &__title .title__p{
+        color: #FFF;
+        font-size: 65px;
+        font-weight: 900;
+    }
+}
