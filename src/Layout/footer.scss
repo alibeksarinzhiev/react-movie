@@ -1,0 +1,103 @@
+.footer{
+    &__container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    &__form{
+        margin-top: 95px;
+        position: relative;
+    }
+    .footer__img{
+        width: 100%;
+        height: 548px;
+        border-radius:10px ;
+    }
+    &__box{
+        width: 1200px;
+        height: 548px;
+        border-radius:10px ;
+        background: rgba(29, 58, 160, 0.90);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        
+    }
+    &__icon{
+        display: flex;
+        gap: 13px;
+        background: none;
+        margin-bottom: 53px;
+    }
+    .icon{
+        background: none;
+    }
+    .icon__h3{
+        background: none;
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .box__h2{
+        background: none;
+        color: #FFF;
+        font-size: 50px;
+        font-weight: 900; 
+    }
+    .box__p{
+        background: none;
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 500; 
+    }
+    .box__form{
+        display: flex;
+        gap: 15px; 
+        background: none;
+        margin-top: 34px;
+    }
+    .box__input{
+        width: 425px;
+        height: 71px;
+        border-radius: 10px;
+        background: #FFF;
+        border: none;
+        outline: none;
+        padding-left:25px;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .box__input::placeholder{
+        color: rgba(21, 26, 38, 0.60);
+        font-size: 17px;
+        font-weight: 400;
+        padding-left: 25px;
+    }
+    .box__btn{
+        padding: 21px 38px;
+        color: black;
+        border-radius: 10px;
+        background: #F2F60F;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .checkbox{
+        display: flex;
+        gap: 10px;
+        background: none;
+        margin-top: 22px;
+    }
+    .checkbox__p{
+        font-size: 17px;
+        font-weight: 700;
+        color: #FFF;
+        background: none;
+    }
+    .span{
+        background: none;
+        color: #F2F60F;
+    }
+}

@@ -15,8 +15,7 @@ const Expected = () => {
                 <div className='expecred__card'>
                     <img src={el.image} />
                     <h4>{el.title}</h4>
-                    <p>{el.country}</p>
-                    <p>{el.year}</p>
+                    <p>{el.text}</p>
                 </div>
                 
                 )}

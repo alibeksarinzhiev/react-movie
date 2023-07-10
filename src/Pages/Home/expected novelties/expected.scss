@@ -14,6 +14,19 @@
         display: flex;
         align-items: center;
         gap:28px;
+        margin-top: 70px;
     }
-    &
+    &__card img{
+      width: 300px;
+    }
+    &__card h4{
+        font-size: 18px;
+        font-weight: 700;
+        color: #FFF;
+    }
+    &__card p{
+        color: #F2F60F;
+        font-size: 15px;
+        font-weight: 500;
+    }
 }
