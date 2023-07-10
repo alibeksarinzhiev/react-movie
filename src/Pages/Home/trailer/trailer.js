@@ -4,6 +4,10 @@ import "./trailer.scss"
 import fastandfurios from './fastandfurios.png'
 import sharefilm from './sharefilm.png'
 import mark from './mark.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+
 const Trailer = () => {
     const {movies} = useContext(CustomContext)
     return (
@@ -17,14 +21,26 @@ const Trailer = () => {
                 <img className='trailer__share' src={sharefilm} alt=""/>
                 <img className='trailer__mark' src={mark} alt=""/>
                 </div>
-                <div className="trailer__box">
+                <Swiper
+                    slidesPerView={3}
+                    loop={true}
+                    Autoplay={true}
+                    onSlideChange={() => console.log('slide change')}
+                    onSwiper={(swiper) => console.log(swiper)}
+                >
                     {movies.map((el)=>(
+                        <SwiperSlide>
                         <div key={el.id} className='trailer__card'>
                             <img src={el.image} alt=""/>
                             <h3>{el.title}</h3>
                         </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+
+
+
+                </Swiper>
+
             </div>
         </section>
     );

@@ -43,7 +43,7 @@ const {movies} = useContext(CustomContext)
                     {
                         movies.slice(0,8).map((el)=>(
                             <div key={el.id} className='now__card'>
-                                <Link to={`onemovie/${el.id}`}>
+                                <Link onClick={()=>toTop()} to={`onemovie/${el.id}`} >
                                     <motion.div whileHover='hover' variants={shakeVariants}>
                                         <img src={el.image} alt=""/>
                                     </motion.div>

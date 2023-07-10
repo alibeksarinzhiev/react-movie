@@ -8,6 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer'>
             <div className='footer__container'>
+                <div className='footer__relative'>
                 <div className='footer__form'>
                     <img src={image} className='footer__img' />
                 </div>
@@ -27,6 +28,7 @@ const Footer = () => {
                     <input type="checkbox" className="custom-checkbox" id="happy" name="happy" value="yes"/>
                     <p className='checkbox__p'>Соглашаюсь на условия <span className='span'>политики конфиденциальности</span> </p>
                     </div>
+                </div>
                 </div>
                 <div className='footer__bottom'>
                    <img src={icons} className='icons'/>
