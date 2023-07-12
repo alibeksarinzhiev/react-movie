@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div className='footer__bottom'>
                    <img src={icons} className='icons'/>
-                   <ul className='fooret__ul'>
+                   <ul className='footer__ul'>
                     <li>Афиша </li>
                     <li>Новости</li>
                     <li>Персоны</li>

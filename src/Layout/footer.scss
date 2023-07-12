@@ -105,4 +105,29 @@
     &__relative{
         position: relative;
     }
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .icons{
+        margin-top: 61px;
+    }
+    &__ul{
+        display: flex;
+        gap: 25px;
+        color: #FFF;
+        cursor: pointer;
+        margin-top: 34px;
+    }
+    .bottom__p{
+        color: rgba(227, 230, 240, 0.72);
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 31px;
+        cursor: pointer;
+    }
+    
 }
