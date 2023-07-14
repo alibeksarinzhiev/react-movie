@@ -8,6 +8,7 @@ import React, {useEffect, useState} from 'react';
 import './style/style.scss'
 import Home from "./Pages/Home/Home";
 import OneMovie from "./Pages/oneMovie/oneMovie";
+import Search from "./Pages/search/search";
 const App = () => {
 
 
@@ -21,6 +22,7 @@ const App = () => {
             <Route path={'/'} element={<Layout/>}>
 <Route path={''} element={<Home/>}/>
 <Route path={'onemovie/:id'} element={<OneMovie/>}/>
+                <Route path='search' element={<Search/>}/>
             </Route>
       <Route path='/login' element={<Login/>}/>
 
