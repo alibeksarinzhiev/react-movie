@@ -35,19 +35,25 @@ const OneMovie = () => {
 
     return (
         <section className='oneMovie'>
-            <div className="oneMove__container container">
-                <img src={`../../${one.image === undefined ?'': one.image}`} alt=""/>
-                <h2>{one.title}</h2>
-                <p>{one.desc}</p>
-                <h2>{one.id}</h2>
-                <ul>
-                    <li className='ratewait'>{one.rateWait}</li>
-                    <li  className='rate'>{one.rate}</li>
-                </ul>
-
+            <div className="oneMovie__container container">
+                <div className="oneMovie__left"> <img src={`../../${one.image === undefined ?'': one.image}`} alt=""/></div>
+                <div className="oneMovie__right">
+                    <h2>{one.title}</h2>
+                    <p className="oneMovie__right-p">Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.</p>
+                    <ul>
+                        <li className='ratewait'>{one.rateWait}</li>
+                        <li  className='rate'>{one.rate}</li>
+                    </ul>
+                    <button className="oneMovie__right-btn">
+                        Смотреть трейлер
+                    </button>
+                </div>
             </div>
         </section>
     );
 };
+// <h2>{one.title}</h2>
+// <p>{one.desc}</p>
+// <h2>{one.id}</h2>
 
 export default OneMovie;
