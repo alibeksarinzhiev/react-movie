@@ -6,7 +6,6 @@ import News from './news/news';
 import Expected from './expected novelties/expected';
 import Cass from './cass/cass';
 import'./home.scss'
-import Login from '../login/login';
 
 const Home = () => {
     return (
@@ -17,7 +16,6 @@ const Home = () => {
             <News/>
             <Expected />
             <Cass/>
-            <Login/>             
         </>
     );
 };
