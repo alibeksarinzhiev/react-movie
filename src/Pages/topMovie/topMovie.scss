@@ -1,0 +1,99 @@
+.topMovie{
+    background: transparent;
+    &__container{
+        width: 1200px;
+    }
+    &__box h1{
+        font-size: 65px;
+       font-weight: 900;
+       color: #fff;
+    }
+    &__box .p{
+        color: #4F5B7C;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &__box span{
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+    }
+    &__title{
+        color: #FFF;
+       font-size: 18px;
+       font-weight: 500;
+       margin-top: 20px;
+    }
+    &__ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        color: #FFF;
+        cursor: pointer;
+    }
+    &__ul li:nth-child(1){
+        padding: 16px 25px;
+        border-radius: 10px;
+        background: #3657CB;
+        box-shadow: 0px 0px 15px 0px rgba(54, 87, 203, 0.80);
+    }
+    &__cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    &__card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #3B486B;;
+    }
+    .card__img{
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 50px;
+    }
+    .card__h2{
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 800;
+        position: absolute;
+        top: 32%;
+        left: 13%;
+        background: transparent;
+    }
+    .span{
+        font-size: 30px;
+        font-weight: 800;
+        color: #3657CB;
+        background: transparent;
+    }
+    .logo{
+        position: absolute;
+        top: 60%;
+        left: 13%;
+        background: transparent;
+    }
+    .card__tite_h3{
+        color: #FFF;
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .card__title_p{
+        color: #F2F60F;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .card__btn{
+        width: 224px;
+        height: 71px;
+        border-radius: 10px;
+        background: #3657CB;
+        box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.40);
+        color: #FFF;
+        border: none;
+        cursor: pointer;
+    }
+}
